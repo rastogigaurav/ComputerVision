@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TGv-YF-exe">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BNT-ce-2tc">
+            <objects>
+                <tabBarController id="TGv-YF-exe" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Ll-wH-xKo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="MkV-SB-gis" kind="relationship" relationship="viewControllers" id="XVw-Bc-RFG"/>
+                        <segue destination="H9N-s8-7JO" kind="relationship" relationship="viewControllers" id="yli-Ec-fD0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5G-GD-bYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1313" y="-179"/>
+        </scene>
+        <!--Native-->
+        <scene sceneID="P94-IN-Mip">
+            <objects>
+                <navigationController id="H9N-s8-7JO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Native" id="iJt-AN-UNC">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rut-Zz-Wgk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BAw-In-HCx" kind="relationship" relationship="rootViewController" id="KPM-2E-ye9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wWP-Ud-VWT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-516" y="134"/>
+        </scene>
+        <!--Native Vision-->
+        <scene sceneID="zPO-A0-sEi">
+            <objects>
+                <viewController id="BAw-In-HCx" customClass="NativeViewController" customModule="ComputerVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sdp-hE-CMV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCa-N5-rE2">
+                                <rect key="frame" x="123.5" y="269.5" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="4yA-Um-q3T"/>
+                                    <constraint firstAttribute="width" constant="128" id="GVY-u6-Xex"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="scanFaceIcon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="openCameraTapped:" destination="BAw-In-HCx" eventType="touchUpInside" id="U6J-vO-nea"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QCa-N5-rE2" firstAttribute="centerX" secondItem="Sdp-hE-CMV" secondAttribute="centerX" id="PuO-rH-BQ9"/>
+                            <constraint firstItem="QCa-N5-rE2" firstAttribute="centerY" secondItem="Sdp-hE-CMV" secondAttribute="centerY" id="fd2-Kc-o3n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Native Vision" id="1WK-bv-Nop"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7NQ-mu-hdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="134"/>
+        </scene>
+        <!--Open CV-->
+        <scene sceneID="fR8-Ag-eMe">
+            <objects>
+                <navigationController id="MkV-SB-gis" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Open CV" id="B1T-cO-BNu">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bpr-Jz-8cH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VTK-Sc-gd0" kind="relationship" relationship="rootViewController" id="o3u-hZ-RWQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mn-H4-J1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-518" y="-591"/>
+        </scene>
+        <!--Open CV Vision-->
+        <scene sceneID="KiR-Wk-yqC">
+            <objects>
+                <viewController id="VTK-Sc-gd0" customClass="OpenCVViewController" customModule="ComputerVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nvg-tK-iFt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VX-Mf-vl6">
+                                <rect key="frame" x="123" y="269" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="8Xn-yA-q9L"/>
+                                    <constraint firstAttribute="width" constant="128" id="a96-eB-MoE"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="scanFaceIcon"/>
+                                <connections>
+                                    <action selector="openCameraTapped:" destination="VTK-Sc-gd0" eventType="touchUpInside" id="fue-vf-Kbb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4VX-Mf-vl6" firstAttribute="centerX" secondItem="nvg-tK-iFt" secondAttribute="centerX" id="WP9-J7-EWi"/>
+                            <constraint firstItem="4VX-Mf-vl6" firstAttribute="centerY" secondItem="nvg-tK-iFt" secondAttribute="centerY" id="XuI-Fg-tlw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Open CV Vision" id="AXK-eV-GlU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOt-wU-JFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237.59999999999999" y="-591.45427286356824"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="scanFaceIcon" width="73" height="73"/>
+    </resources>
+</document>

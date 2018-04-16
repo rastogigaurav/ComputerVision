@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C279D5ED2084FE3D00C0F946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279D5EC2084FE3D00C0F946 /* AppDelegate.swift */; };
-		C279D5EF2084FE3D00C0F946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279D5EE2084FE3D00C0F946 /* ViewController.swift */; };
-		C279D5F22084FE3D00C0F946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C279D5F02084FE3D00C0F946 /* Main.storyboard */; };
 		C279D5F42084FE3D00C0F946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C279D5F32084FE3D00C0F946 /* Assets.xcassets */; };
 		C279D5F72084FE3D00C0F946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C279D5F52084FE3D00C0F946 /* LaunchScreen.storyboard */; };
 		C279D6022084FE3D00C0F946 /* ComputerVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279D6012084FE3D00C0F946 /* ComputerVisionTests.swift */; };
 		C279D60D2084FE3D00C0F946 /* ComputerVisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279D60C2084FE3D00C0F946 /* ComputerVisionUITests.swift */; };
+		C279D6222085000200C0F946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279D61E2085000200C0F946 /* AppDelegate.swift */; };
+		C279D6242085007000C0F946 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C279D6232085007000C0F946 /* Dashboard.storyboard */; };
+		C279D6262085008900C0F946 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279D6252085008900C0F946 /* DashboardViewController.swift */; };
+		C279D62820850D9A00C0F946 /* OpenCVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279D62720850D9A00C0F946 /* OpenCVViewController.swift */; };
+		C279D62A20850DB900C0F946 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279D62920850DB900C0F946 /* NativeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,6 @@
 
 /* Begin PBXFileReference section */
 		C279D5E92084FE3D00C0F946 /* ComputerVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComputerVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C279D5EC2084FE3D00C0F946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C279D5EE2084FE3D00C0F946 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C279D5F12084FE3D00C0F946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C279D5F32084FE3D00C0F946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C279D5F62084FE3D00C0F946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C279D5F82084FE3D00C0F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,11 @@
 		C279D6082084FE3D00C0F946 /* ComputerVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComputerVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C279D60C2084FE3D00C0F946 /* ComputerVisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerVisionUITests.swift; sourceTree = "<group>"; };
 		C279D60E2084FE3D00C0F946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C279D61E2085000200C0F946 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C279D6232085007000C0F946 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		C279D6252085008900C0F946 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		C279D62720850D9A00C0F946 /* OpenCVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVViewController.swift; sourceTree = "<group>"; };
+		C279D62920850DB900C0F946 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +101,13 @@
 		C279D5EB2084FE3D00C0F946 /* ComputerVision */ = {
 			isa = PBXGroup;
 			children = (
-				C279D5EC2084FE3D00C0F946 /* AppDelegate.swift */,
-				C279D5EE2084FE3D00C0F946 /* ViewController.swift */,
-				C279D5F02084FE3D00C0F946 /* Main.storyboard */,
+				C279D61D2085000200C0F946 /* Application */,
+				C279D61C2085000200C0F946 /* General */,
+				C279D61F2085000200C0F946 /* Interactors */,
+				C279D6202085000200C0F946 /* Models */,
+				C279D6212085000200C0F946 /* Services */,
+				C279D61A2085000100C0F946 /* ViewModels */,
+				C279D61B2085000100C0F946 /* Views */,
 				C279D5F32084FE3D00C0F946 /* Assets.xcassets */,
 				C279D5F52084FE3D00C0F946 /* LaunchScreen.storyboard */,
 				C279D5F82084FE3D00C0F946 /* Info.plist */,
@@ -110,6 +118,11 @@
 		C279D6002084FE3D00C0F946 /* ComputerVisionTests */ = {
 			isa = PBXGroup;
 			children = (
+				C279D62E2085168300C0F946 /* General */,
+				C279D62C2085168300C0F946 /* Interactors */,
+				C279D62B2085168300C0F946 /* Models */,
+				C279D62D2085168300C0F946 /* Repositories */,
+				C279D62F2085168300C0F946 /* ViewModels */,
 				C279D6012084FE3D00C0F946 /* ComputerVisionTests.swift */,
 				C279D6032084FE3D00C0F946 /* Info.plist */,
 			);
@@ -123,6 +136,95 @@
 				C279D60E2084FE3D00C0F946 /* Info.plist */,
 			);
 			path = ComputerVisionUITests;
+			sourceTree = "<group>";
+		};
+		C279D61A2085000100C0F946 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C279D61B2085000100C0F946 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C279D6232085007000C0F946 /* Dashboard.storyboard */,
+				C279D6252085008900C0F946 /* DashboardViewController.swift */,
+				C279D62720850D9A00C0F946 /* OpenCVViewController.swift */,
+				C279D62920850DB900C0F946 /* NativeViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C279D61C2085000200C0F946 /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C279D61D2085000200C0F946 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				C279D61E2085000200C0F946 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C279D61F2085000200C0F946 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		C279D6202085000200C0F946 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C279D6212085000200C0F946 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C279D62B2085168300C0F946 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C279D62C2085168300C0F946 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		C279D62D2085168300C0F946 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		C279D62E2085168300C0F946 /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C279D62F2085168300C0F946 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +335,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C279D5F72084FE3D00C0F946 /* LaunchScreen.storyboard in Resources */,
+				C279D6242085007000C0F946 /* Dashboard.storyboard in Resources */,
 				C279D5F42084FE3D00C0F946 /* Assets.xcassets in Resources */,
-				C279D5F22084FE3D00C0F946 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +361,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C279D5EF2084FE3D00C0F946 /* ViewController.swift in Sources */,
-				C279D5ED2084FE3D00C0F946 /* AppDelegate.swift in Sources */,
+				C279D62820850D9A00C0F946 /* OpenCVViewController.swift in Sources */,
+				C279D6222085000200C0F946 /* AppDelegate.swift in Sources */,
+				C279D6262085008900C0F946 /* DashboardViewController.swift in Sources */,
+				C279D62A20850DB900C0F946 /* NativeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +400,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C279D5F02084FE3D00C0F946 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C279D5F12084FE3D00C0F946 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C279D5F52084FE3D00C0F946 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -430,6 +526,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M37JW29G64;
 				INFOPLIST_FILE = ComputerVision/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.ComputerVision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +544,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M37JW29G64;
 				INFOPLIST_FILE = ComputerVision/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.ComputerVision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
