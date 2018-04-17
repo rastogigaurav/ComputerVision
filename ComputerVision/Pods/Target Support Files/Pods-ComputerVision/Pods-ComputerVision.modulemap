@@ -1,0 +1,6 @@
+framework module Pods_ComputerVision {
+  umbrella header "Pods-ComputerVision-umbrella.h"
+
+  export *
+  module * { export * }
+}

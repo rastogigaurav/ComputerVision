@@ -1,0 +1,6 @@
+framework module Pods_ComputerVisionUITests {
+  umbrella header "Pods-ComputerVisionUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
