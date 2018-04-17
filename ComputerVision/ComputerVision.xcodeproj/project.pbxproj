@@ -20,6 +20,11 @@
 		C279D62820850D9A00C0F946 /* OpenCVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279D62720850D9A00C0F946 /* OpenCVViewController.swift */; };
 		C279D62A20850DB900C0F946 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279D62920850DB900C0F946 /* NativeViewController.swift */; };
 		C279D64F208673A000C0F946 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C279D64E208673A000C0F946 /* Accelerate.framework */; };
+		C279D6512086757A00C0F946 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C279D6502086757A00C0F946 /* AssetsLibrary.framework */; };
+		C279D6532086758200C0F946 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C279D6522086758200C0F946 /* CoreGraphics.framework */; };
+		C279D6552086759000C0F946 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C279D6542086759000C0F946 /* CoreFoundation.framework */; };
+		C279D6572086759800C0F946 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C279D6562086759800C0F946 /* CoreMedia.framework */; };
+		C279D65E2086761D00C0F946 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C279D65D2086761D00C0F946 /* OpenCVWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,14 @@
 		C279D62720850D9A00C0F946 /* OpenCVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVViewController.swift; sourceTree = "<group>"; };
 		C279D62920850DB900C0F946 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
 		C279D64E208673A000C0F946 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C279D6502086757A00C0F946 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		C279D6522086758200C0F946 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C279D6542086759000C0F946 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		C279D6562086759800C0F946 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C279D65B2086761D00C0F946 /* ComputerVision-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ComputerVision-Bridging-Header.h"; sourceTree = "<group>"; };
+		C279D65C2086761D00C0F946 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		C279D65D2086761D00C0F946 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		C279D65F2086765400C0F946 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CE70FB63D509F080B96711AB /* Pods_ComputerVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComputerVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -72,6 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C279D6572086759800C0F946 /* CoreMedia.framework in Frameworks */,
+				C279D6552086759000C0F946 /* CoreFoundation.framework in Frameworks */,
+				C279D6532086758200C0F946 /* CoreGraphics.framework in Frameworks */,
+				C279D6512086757A00C0F946 /* AssetsLibrary.framework in Frameworks */,
 				C279D64F208673A000C0F946 /* Accelerate.framework in Frameworks */,
 				0DF2C5BDA1664B2576963CA6 /* Pods_ComputerVision.framework in Frameworks */,
 			);
@@ -99,6 +116,10 @@
 		4C4E8A12F064593524DEE783 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C279D6562086759800C0F946 /* CoreMedia.framework */,
+				C279D6542086759000C0F946 /* CoreFoundation.framework */,
+				C279D6522086758200C0F946 /* CoreGraphics.framework */,
+				C279D6502086757A00C0F946 /* AssetsLibrary.framework */,
 				C279D64E208673A000C0F946 /* Accelerate.framework */,
 				CE70FB63D509F080B96711AB /* Pods_ComputerVision.framework */,
 				ADE0C713BC469361E2123303 /* Pods_ComputerVisionTests.framework */,
@@ -145,15 +166,13 @@
 		C279D5EB2084FE3D00C0F946 /* ComputerVision */ = {
 			isa = PBXGroup;
 			children = (
+				C279D659208675EE00C0F946 /* General */,
 				C279D61D2085000200C0F946 /* Application */,
-				C279D61C2085000200C0F946 /* General */,
-				C279D61F2085000200C0F946 /* Interactors */,
-				C279D6202085000200C0F946 /* Models */,
-				C279D6212085000200C0F946 /* Services */,
-				C279D61A2085000100C0F946 /* ViewModels */,
 				C279D61B2085000100C0F946 /* Views */,
 				C279D5F32084FE3D00C0F946 /* Assets.xcassets */,
 				C279D5F52084FE3D00C0F946 /* LaunchScreen.storyboard */,
+				C279D65F2086765400C0F946 /* PrefixHeader.pch */,
+				C279D65B2086761D00C0F946 /* ComputerVision-Bridging-Header.h */,
 				C279D5F82084FE3D00C0F946 /* Info.plist */,
 			);
 			path = ComputerVision;
@@ -182,13 +201,6 @@
 			path = ComputerVisionUITests;
 			sourceTree = "<group>";
 		};
-		C279D61A2085000100C0F946 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		C279D61B2085000100C0F946 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,40 +212,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		C279D61C2085000200C0F946 /* General */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = General;
-			sourceTree = "<group>";
-		};
 		C279D61D2085000200C0F946 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				C279D61E2085000200C0F946 /* AppDelegate.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		C279D61F2085000200C0F946 /* Interactors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interactors;
-			sourceTree = "<group>";
-		};
-		C279D6202085000200C0F946 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C279D6212085000200C0F946 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		C279D62B2085168300C0F946 /* Models */ = {
@@ -269,6 +253,23 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C279D659208675EE00C0F946 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C279D65A208675EE00C0F946 /* OpevCV Wrapper */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		C279D65A208675EE00C0F946 /* OpevCV Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				C279D65C2086761D00C0F946 /* OpenCVWrapper.h */,
+				C279D65D2086761D00C0F946 /* OpenCVWrapper.mm */,
+			);
+			path = "OpevCV Wrapper";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +349,7 @@
 				TargetAttributes = {
 					C279D5E82084FE3C00C0F946 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					C279D5FC2084FE3D00C0F946 = {
@@ -565,6 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C279D62820850D9A00C0F946 /* OpenCVViewController.swift in Sources */,
+				C279D65E2086761D00C0F946 /* OpenCVWrapper.mm in Sources */,
 				C279D6222085000200C0F946 /* AppDelegate.swift in Sources */,
 				C279D6262085008900C0F946 /* DashboardViewController.swift in Sources */,
 				C279D62A20850DB900C0F946 /* NativeViewController.swift in Sources */,
@@ -726,15 +729,19 @@
 			baseConfigurationReference = 893F870266B80DCB1EBE9014 /* Pods-ComputerVision.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M37JW29G64;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ComputerVision/PrefixHeader.pch";
 				INFOPLIST_FILE = ComputerVision/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.ComputerVision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ComputerVision/ComputerVision-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -745,15 +752,18 @@
 			baseConfigurationReference = 2010BDB328975319D36AEE95 /* Pods-ComputerVision.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M37JW29G64;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ComputerVision/PrefixHeader.pch";
 				INFOPLIST_FILE = ComputerVision/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.ComputerVision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ComputerVision/ComputerVision-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -14,6 +14,7 @@ class OpenCVViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print("\(OpenCVWrapper.openCVVersionString())")
     }
 
     override func didReceiveMemoryWarning() {
