@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,7 +65,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="openCameraTapped:" destination="BAw-In-HCx" eventType="touchUpInside" id="U6J-vO-nea"/>
+                                    <segue destination="KC8-Sy-1gg" kind="presentation" identifier="showNativeLiveCamera" modalPresentationStyle="fullScreen" id="1Sd-jr-IQ1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,6 +74,7 @@
                             <constraint firstItem="QCa-N5-rE2" firstAttribute="centerX" secondItem="Sdp-hE-CMV" secondAttribute="centerX" id="PuO-rH-BQ9"/>
                             <constraint firstItem="QCa-N5-rE2" firstAttribute="centerY" secondItem="Sdp-hE-CMV" secondAttribute="centerY" id="fd2-Kc-o3n"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="3dm-aH-2wX"/>
                     </view>
                     <navigationItem key="navigationItem" title="Native Vision" id="1WK-bv-Nop"/>
                 </viewController>
@@ -108,14 +110,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VX-Mf-vl6">
-                                <rect key="frame" x="123" y="269" width="128" height="128"/>
+                                <rect key="frame" x="123.5" y="269.5" width="128" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="8Xn-yA-q9L"/>
                                     <constraint firstAttribute="width" constant="128" id="a96-eB-MoE"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="scanFaceIcon"/>
                                 <connections>
-                                    <action selector="openCameraTapped:" destination="VTK-Sc-gd0" eventType="touchUpInside" id="fue-vf-Kbb"/>
+                                    <segue destination="KC8-Sy-1gg" kind="presentation" identifier="showOpenCVLiveCamera" modalPresentationStyle="fullScreen" id="cgw-5w-I9L"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -124,6 +126,7 @@
                             <constraint firstItem="4VX-Mf-vl6" firstAttribute="centerX" secondItem="nvg-tK-iFt" secondAttribute="centerX" id="WP9-J7-EWi"/>
                             <constraint firstItem="4VX-Mf-vl6" firstAttribute="centerY" secondItem="nvg-tK-iFt" secondAttribute="centerY" id="XuI-Fg-tlw"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="1VE-O3-LiB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Open CV Vision" id="AXK-eV-GlU"/>
                 </viewController>
@@ -131,8 +134,63 @@
             </objects>
             <point key="canvasLocation" x="237.59999999999999" y="-591.45427286356824"/>
         </scene>
+        <!--Live Camera View Controller-->
+        <scene sceneID="nOq-qk-XuY">
+            <objects>
+                <viewController id="KC8-Sy-1gg" customClass="LiveCameraViewController" customModule="ComputerVision" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ctw-DP-XGQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PIY-OU-5gf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="h6R-TI-5mq" appends="YES" id="ntf-KL-On3"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qet-tQ-mfs">
+                                <rect key="frame" x="315" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TE7-QQ-hsW"/>
+                                    <constraint firstAttribute="width" constant="40" id="fcw-Kg-H3i"/>
+                                </constraints>
+                                <state key="normal" image="cancelIcon"/>
+                                <connections>
+                                    <action selector="cancelTapped:" destination="KC8-Sy-1gg" eventType="touchUpInside" id="qcb-B8-QWF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PIY-OU-5gf" firstAttribute="leading" secondItem="ctw-DP-XGQ" secondAttribute="leading" id="2A1-6d-Y1o"/>
+                            <constraint firstAttribute="trailing" secondItem="Qet-tQ-mfs" secondAttribute="trailing" constant="20" id="Hok-hB-xRP"/>
+                            <constraint firstItem="Qet-tQ-mfs" firstAttribute="top" secondItem="ctw-DP-XGQ" secondAttribute="top" constant="20" id="M52-gg-mgy"/>
+                            <constraint firstItem="PIY-OU-5gf" firstAttribute="top" secondItem="ctw-DP-XGQ" secondAttribute="top" id="dv1-P3-gG4"/>
+                            <constraint firstItem="PIY-OU-5gf" firstAttribute="bottom" secondItem="ctw-DP-XGQ" secondAttribute="bottom" id="lXA-HI-OVu"/>
+                            <constraint firstItem="PIY-OU-5gf" firstAttribute="trailing" secondItem="ctw-DP-XGQ" secondAttribute="trailing" id="mOp-rr-KCo"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="cameraView" destination="PIY-OU-5gf" id="VUC-vC-FPx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jtf-pb-mSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="h6R-TI-5mq">
+                    <connections>
+                        <action selector="onTap:" destination="KC8-Sy-1gg" id="pWZ-oZ-2l5"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1202" y="-212"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="cancelIcon" width="410" height="410"/>
         <image name="scanFaceIcon" width="73" height="73"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="1Sd-jr-IQ1"/>
+    </inferredMetricsTieBreakers>
 </document>

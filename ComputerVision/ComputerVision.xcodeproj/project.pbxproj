@@ -10,6 +10,7 @@
 		0DF2C5BDA1664B2576963CA6 /* Pods_ComputerVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE70FB63D509F080B96711AB /* Pods_ComputerVision.framework */; };
 		47335B50FA062BF3B4941B7D /* Pods_ComputerVisionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A542B6FD853F18B86F22599 /* Pods_ComputerVisionUITests.framework */; };
 		59D853E3D09C9D3AADC079D3 /* Pods_ComputerVisionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE0C713BC469361E2123303 /* Pods_ComputerVisionTests.framework */; };
+		C26B362B20872AEA003269D7 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = C26B362A20872AEA003269D7 /* UIImage+OpenCV.mm */; };
 		C279D5F42084FE3D00C0F946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C279D5F32084FE3D00C0F946 /* Assets.xcassets */; };
 		C279D5F72084FE3D00C0F946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C279D5F52084FE3D00C0F946 /* LaunchScreen.storyboard */; };
 		C279D6022084FE3D00C0F946 /* ComputerVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C279D6012084FE3D00C0F946 /* ComputerVisionTests.swift */; };
@@ -24,7 +25,14 @@
 		C279D6532086758200C0F946 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C279D6522086758200C0F946 /* CoreGraphics.framework */; };
 		C279D6552086759000C0F946 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C279D6542086759000C0F946 /* CoreFoundation.framework */; };
 		C279D6572086759800C0F946 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C279D6562086759800C0F946 /* CoreMedia.framework */; };
-		C279D65E2086761D00C0F946 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C279D65D2086761D00C0F946 /* OpenCVWrapper.mm */; };
+		C27C3C85208786E40029FEDF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27C3C84208786E40029FEDF /* AVFoundation.framework */; };
+		C27C3C8A20878FC80029FEDF /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = C27C3C8820878FC70029FEDF /* haarcascade_frontalface_alt2.xml */; };
+		C27C3C8B20878FC80029FEDF /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = C27C3C8920878FC80029FEDF /* haarcascade_eye_tree_eyeglasses.xml */; };
+		C27C3C992087BC1E0029FEDF /* LiveCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C3C982087BC1E0029FEDF /* LiveCameraViewModel.swift */; };
+		C27C3C9C2087C4500029FEDF /* LiveCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C3C9B2087C4500029FEDF /* LiveCameraViewController.swift */; };
+		C27C3C9E2087C5910029FEDF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C3C9D2087C5910029FEDF /* Constants.swift */; };
+		C27C3CAC2087CCA70029FEDF /* VideoCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = C27C3CA82087CCA70029FEDF /* VideoCamera.mm */; };
+		C27C3CAD2087CCA70029FEDF /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C27C3CAB2087CCA70029FEDF /* OpenCVWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,8 @@
 		893F870266B80DCB1EBE9014 /* Pods-ComputerVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComputerVision.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComputerVision/Pods-ComputerVision.debug.xcconfig"; sourceTree = "<group>"; };
 		8EB0C447C333C0D99CD6C81D /* Pods-ComputerVisionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComputerVisionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComputerVisionUITests/Pods-ComputerVisionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADE0C713BC469361E2123303 /* Pods_ComputerVisionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComputerVisionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C26B362920872AEA003269D7 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		C26B362A20872AEA003269D7 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
 		C279D5E92084FE3D00C0F946 /* ComputerVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComputerVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C279D5F32084FE3D00C0F946 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C279D5F62084FE3D00C0F946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,9 +84,18 @@
 		C279D6542086759000C0F946 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		C279D6562086759800C0F946 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		C279D65B2086761D00C0F946 /* ComputerVision-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ComputerVision-Bridging-Header.h"; sourceTree = "<group>"; };
-		C279D65C2086761D00C0F946 /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
-		C279D65D2086761D00C0F946 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		C279D65F2086765400C0F946 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C27C3C84208786E40029FEDF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C27C3C8820878FC70029FEDF /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		C27C3C8920878FC80029FEDF /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		C27C3C982087BC1E0029FEDF /* LiveCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCameraViewModel.swift; sourceTree = "<group>"; };
+		C27C3C9B2087C4500029FEDF /* LiveCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCameraViewController.swift; sourceTree = "<group>"; };
+		C27C3C9D2087C5910029FEDF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C27C3CA72087CCA70029FEDF /* VideoCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCamera.h; sourceTree = "<group>"; };
+		C27C3CA82087CCA70029FEDF /* VideoCamera.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoCamera.mm; sourceTree = "<group>"; };
+		C27C3CAA2087CCA70029FEDF /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		C27C3CAB2087CCA70029FEDF /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		C27C3CAE2087CCE50029FEDF /* FeatureDetectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureDetectionProtocol.h; sourceTree = "<group>"; };
 		CE70FB63D509F080B96711AB /* Pods_ComputerVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComputerVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C27C3C85208786E40029FEDF /* AVFoundation.framework in Frameworks */,
 				C279D6572086759800C0F946 /* CoreMedia.framework in Frameworks */,
 				C279D6552086759000C0F946 /* CoreFoundation.framework in Frameworks */,
 				C279D6532086758200C0F946 /* CoreGraphics.framework in Frameworks */,
@@ -116,6 +136,7 @@
 		4C4E8A12F064593524DEE783 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C27C3C84208786E40029FEDF /* AVFoundation.framework */,
 				C279D6562086759800C0F946 /* CoreMedia.framework */,
 				C279D6542086759000C0F946 /* CoreFoundation.framework */,
 				C279D6522086758200C0F946 /* CoreGraphics.framework */,
@@ -139,6 +160,15 @@
 				607BD66861FC6102937C8C5D /* Pods-ComputerVisionUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C26B362520872A5C003269D7 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C26B362920872AEA003269D7 /* UIImage+OpenCV.h */,
+				C26B362A20872AEA003269D7 /* UIImage+OpenCV.mm */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		C279D5E02084FE3C00C0F946 = {
@@ -166,11 +196,15 @@
 		C279D5EB2084FE3D00C0F946 /* ComputerVision */ = {
 			isa = PBXGroup;
 			children = (
+				C27C3CA32087CCA70029FEDF /* Interactors */,
+				C27C3C972087BBE60029FEDF /* ViewModels */,
 				C279D659208675EE00C0F946 /* General */,
 				C279D61D2085000200C0F946 /* Application */,
 				C279D61B2085000100C0F946 /* Views */,
 				C279D5F32084FE3D00C0F946 /* Assets.xcassets */,
 				C279D5F52084FE3D00C0F946 /* LaunchScreen.storyboard */,
+				C27C3C8920878FC80029FEDF /* haarcascade_eye_tree_eyeglasses.xml */,
+				C27C3C8820878FC70029FEDF /* haarcascade_frontalface_alt2.xml */,
 				C279D65F2086765400C0F946 /* PrefixHeader.pch */,
 				C279D65B2086761D00C0F946 /* ComputerVision-Bridging-Header.h */,
 				C279D5F82084FE3D00C0F946 /* Info.plist */,
@@ -208,6 +242,7 @@
 				C279D6252085008900C0F946 /* DashboardViewController.swift */,
 				C279D62720850D9A00C0F946 /* OpenCVViewController.swift */,
 				C279D62920850DB900C0F946 /* NativeViewController.swift */,
+				C27C3C9B2087C4500029FEDF /* LiveCameraViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -258,16 +293,52 @@
 		C279D659208675EE00C0F946 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				C279D65A208675EE00C0F946 /* OpevCV Wrapper */,
+				C26B362520872A5C003269D7 /* Category */,
+				C27C3C9D2087C5910029FEDF /* Constants.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
 		};
-		C279D65A208675EE00C0F946 /* OpevCV Wrapper */ = {
+		C27C3C972087BBE60029FEDF /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C279D65C2086761D00C0F946 /* OpenCVWrapper.h */,
-				C279D65D2086761D00C0F946 /* OpenCVWrapper.mm */,
+				C27C3C982087BC1E0029FEDF /* LiveCameraViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C27C3CA32087CCA70029FEDF /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				C27C3CA42087CCA70029FEDF /* Feature Detection */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		C27C3CA42087CCA70029FEDF /* Feature Detection */ = {
+			isa = PBXGroup;
+			children = (
+				C27C3CAE2087CCE50029FEDF /* FeatureDetectionProtocol.h */,
+				C27C3CA62087CCA70029FEDF /* VideoCamera */,
+				C27C3CA92087CCA70029FEDF /* OpevCV Wrapper */,
+			);
+			path = "Feature Detection";
+			sourceTree = "<group>";
+		};
+		C27C3CA62087CCA70029FEDF /* VideoCamera */ = {
+			isa = PBXGroup;
+			children = (
+				C27C3CA72087CCA70029FEDF /* VideoCamera.h */,
+				C27C3CA82087CCA70029FEDF /* VideoCamera.mm */,
+			);
+			path = VideoCamera;
+			sourceTree = "<group>";
+		};
+		C27C3CA92087CCA70029FEDF /* OpevCV Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				C27C3CAA2087CCA70029FEDF /* OpenCVWrapper.h */,
+				C27C3CAB2087CCA70029FEDF /* OpenCVWrapper.mm */,
 			);
 			path = "OpevCV Wrapper";
 			sourceTree = "<group>";
@@ -389,8 +460,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C27C3C8B20878FC80029FEDF /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
 				C279D5F72084FE3D00C0F946 /* LaunchScreen.storyboard in Resources */,
 				C279D6242085007000C0F946 /* Dashboard.storyboard in Resources */,
+				C27C3C8A20878FC80029FEDF /* haarcascade_frontalface_alt2.xml in Resources */,
 				C279D5F42084FE3D00C0F946 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,10 +639,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C27C3CAD2087CCA70029FEDF /* OpenCVWrapper.mm in Sources */,
 				C279D62820850D9A00C0F946 /* OpenCVViewController.swift in Sources */,
-				C279D65E2086761D00C0F946 /* OpenCVWrapper.mm in Sources */,
 				C279D6222085000200C0F946 /* AppDelegate.swift in Sources */,
+				C27C3C9C2087C4500029FEDF /* LiveCameraViewController.swift in Sources */,
+				C27C3C9E2087C5910029FEDF /* Constants.swift in Sources */,
+				C27C3C992087BC1E0029FEDF /* LiveCameraViewModel.swift in Sources */,
+				C27C3CAC2087CCA70029FEDF /* VideoCamera.mm in Sources */,
 				C279D6262085008900C0F946 /* DashboardViewController.swift in Sources */,
+				C26B362B20872AEA003269D7 /* UIImage+OpenCV.mm in Sources */,
 				C279D62A20850DB900C0F946 /* NativeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -734,6 +812,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M37JW29G64;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ComputerVision/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = ComputerVision/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -757,6 +836,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M37JW29G64;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ComputerVision/PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = ComputerVision/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

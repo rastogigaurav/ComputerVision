@@ -22,6 +22,11 @@ class OpenCVViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func openCameraTapped(_ sender: UIButton) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showOpenCVLiveCamera"{
+            if let liveCameraViewController = segue.destination as? LiveCameraViewController{
+                liveCameraViewController.wrapperType = .openCV
+            }
+        }
     }
 }
