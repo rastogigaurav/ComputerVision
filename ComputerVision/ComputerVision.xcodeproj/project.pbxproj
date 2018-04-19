@@ -33,6 +33,8 @@
 		C27C3C9E2087C5910029FEDF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C3C9D2087C5910029FEDF /* Constants.swift */; };
 		C27C3CAC2087CCA70029FEDF /* VideoCamera.mm in Sources */ = {isa = PBXBuildFile; fileRef = C27C3CA82087CCA70029FEDF /* VideoCamera.mm */; };
 		C27C3CAD2087CCA70029FEDF /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C27C3CAB2087CCA70029FEDF /* OpenCVWrapper.mm */; };
+		C27C3CC62088FFB40029FEDF /* OpenCVWrapperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C3CC52088FFB40029FEDF /* OpenCVWrapperMock.swift */; };
+		C27C3CC8208900C20029FEDF /* LiveCameraViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C3CC7208900C20029FEDF /* LiveCameraViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		C27C3CAA2087CCA70029FEDF /* OpenCVWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		C27C3CAB2087CCA70029FEDF /* OpenCVWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		C27C3CAE2087CCE50029FEDF /* FeatureDetectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureDetectionProtocol.h; sourceTree = "<group>"; };
+		C27C3CC52088FFB40029FEDF /* OpenCVWrapperMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVWrapperMock.swift; sourceTree = "<group>"; };
+		C27C3CC7208900C20029FEDF /* LiveCameraViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCameraViewModelTest.swift; sourceTree = "<group>"; };
 		CE70FB63D509F080B96711AB /* Pods_ComputerVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComputerVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -215,11 +219,8 @@
 		C279D6002084FE3D00C0F946 /* ComputerVisionTests */ = {
 			isa = PBXGroup;
 			children = (
-				C279D62E2085168300C0F946 /* General */,
-				C279D62C2085168300C0F946 /* Interactors */,
-				C279D62B2085168300C0F946 /* Models */,
-				C279D62D2085168300C0F946 /* Repositories */,
-				C279D62F2085168300C0F946 /* ViewModels */,
+				C27C3CC42088FF0D0029FEDF /* Mocks */,
+				C27C3CBC2088FC9E0029FEDF /* ViewModel */,
 				C279D6012084FE3D00C0F946 /* ComputerVisionTests.swift */,
 				C279D6032084FE3D00C0F946 /* Info.plist */,
 			);
@@ -253,41 +254,6 @@
 				C279D61E2085000200C0F946 /* AppDelegate.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		C279D62B2085168300C0F946 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C279D62C2085168300C0F946 /* Interactors */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interactors;
-			sourceTree = "<group>";
-		};
-		C279D62D2085168300C0F946 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		C279D62E2085168300C0F946 /* General */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = General;
-			sourceTree = "<group>";
-		};
-		C279D62F2085168300C0F946 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		C279D659208675EE00C0F946 /* General */ = {
@@ -341,6 +307,22 @@
 				C27C3CAB2087CCA70029FEDF /* OpenCVWrapper.mm */,
 			);
 			path = "OpevCV Wrapper";
+			sourceTree = "<group>";
+		};
+		C27C3CBC2088FC9E0029FEDF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C27C3CC7208900C20029FEDF /* LiveCameraViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C27C3CC42088FF0D0029FEDF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				C27C3CC52088FFB40029FEDF /* OpenCVWrapperMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -656,6 +638,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C27C3CC62088FFB40029FEDF /* OpenCVWrapperMock.swift in Sources */,
+				C27C3CC8208900C20029FEDF /* LiveCameraViewModelTest.swift in Sources */,
 				C279D6022084FE3D00C0F946 /* ComputerVisionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
