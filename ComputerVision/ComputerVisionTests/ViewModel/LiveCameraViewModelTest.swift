@@ -13,12 +13,12 @@ import XCTest
 class LiveCameraViewModelTest: XCTestCase {
     
     var openCVWrapper = OpenCVWrapperMock()
+    var visionWrapper = VisionWrapperMock()
     var viewModel : LiveCameraViewModel!
     
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        self.viewModel = LiveCameraViewModel(featureDetectionWrapper: openCVWrapper)
     }
     
     override func tearDown() {
@@ -26,18 +26,33 @@ class LiveCameraViewModelTest: XCTestCase {
         super.tearDown()
     }
     
-    func testDidAppear(){
+    func testDidAppearForOpenCV(){
+        self.viewModel = LiveCameraViewModel(featureDetectionWrapper: openCVWrapper)
         self.viewModel.didAppear()
         XCTAssertTrue(self.openCVWrapper.startCaptureCalled)
     }
     
-    func testWillDisappear(){
+    func testWillDisappearForOpenCV(){
+        self.viewModel = LiveCameraViewModel(featureDetectionWrapper: openCVWrapper)
         self.viewModel.willDisappear()
         XCTAssertTrue(self.openCVWrapper.stopCaptureCalled)
     }
     
-    func testDidTap(){
+    func testDidTapForOpenCV(){
+        self.viewModel = LiveCameraViewModel(featureDetectionWrapper: openCVWrapper)
         self.viewModel.didTap(tappedPoint: CGPoint())
         XCTAssertTrue(self.openCVWrapper.pointOfInterestCalled)
     }
+    
+    func testDidAppearForVisionFramework(){
+        self.viewModel = LiveCameraViewModel(featureDetectionWrapper: visionWrapper)
+        self.viewModel.didAppear()
+        XCTAssertTrue(self.visionWrapper.startCaptureCalled)
+    }
+    
+    func testWillDisappearForVisionFramework(){
+        self.viewModel = LiveCameraViewModel(featureDetectionWrapper: visionWrapper)
+        self.viewModel.willDisappear()
+        XCTAssertTrue(self.visionWrapper.stopCaptureCalled)
+    }    
 }

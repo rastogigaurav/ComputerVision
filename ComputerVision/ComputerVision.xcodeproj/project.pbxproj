@@ -10,6 +10,8 @@
 		0DF2C5BDA1664B2576963CA6 /* Pods_ComputerVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE70FB63D509F080B96711AB /* Pods_ComputerVision.framework */; };
 		47335B50FA062BF3B4941B7D /* Pods_ComputerVisionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A542B6FD853F18B86F22599 /* Pods_ComputerVisionUITests.framework */; };
 		59D853E3D09C9D3AADC079D3 /* Pods_ComputerVisionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE0C713BC469361E2123303 /* Pods_ComputerVisionTests.framework */; };
+		C20EE6CA208B994E0066ED9F /* VisionWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EE6C9208B994E0066ED9F /* VisionWrapper.swift */; };
+		C20EE6CC208BA2970066ED9F /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20EE6CB208BA2970066ED9F /* PreviewView.swift */; };
 		C26B362B20872AEA003269D7 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = C26B362A20872AEA003269D7 /* UIImage+OpenCV.mm */; };
 		C279D5F42084FE3D00C0F946 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C279D5F32084FE3D00C0F946 /* Assets.xcassets */; };
 		C279D5F72084FE3D00C0F946 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C279D5F52084FE3D00C0F946 /* LaunchScreen.storyboard */; };
@@ -35,6 +37,7 @@
 		C27C3CAD2087CCA70029FEDF /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = C27C3CAB2087CCA70029FEDF /* OpenCVWrapper.mm */; };
 		C27C3CC62088FFB40029FEDF /* OpenCVWrapperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C3CC52088FFB40029FEDF /* OpenCVWrapperMock.swift */; };
 		C27C3CC8208900C20029FEDF /* LiveCameraViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27C3CC7208900C20029FEDF /* LiveCameraViewModelTest.swift */; };
+		C2C3CAF5208BB68000A61172 /* VisionWrapperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C3CAF4208BB68000A61172 /* VisionWrapperMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,8 @@
 		893F870266B80DCB1EBE9014 /* Pods-ComputerVision.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComputerVision.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComputerVision/Pods-ComputerVision.debug.xcconfig"; sourceTree = "<group>"; };
 		8EB0C447C333C0D99CD6C81D /* Pods-ComputerVisionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComputerVisionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ComputerVisionUITests/Pods-ComputerVisionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADE0C713BC469361E2123303 /* Pods_ComputerVisionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComputerVisionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20EE6C9208B994E0066ED9F /* VisionWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionWrapper.swift; sourceTree = "<group>"; };
+		C20EE6CB208BA2970066ED9F /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		C26B362920872AEA003269D7 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
 		C26B362A20872AEA003269D7 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
 		C279D5E92084FE3D00C0F946 /* ComputerVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComputerVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +105,7 @@
 		C27C3CAE2087CCE50029FEDF /* FeatureDetectionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeatureDetectionProtocol.h; sourceTree = "<group>"; };
 		C27C3CC52088FFB40029FEDF /* OpenCVWrapperMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCVWrapperMock.swift; sourceTree = "<group>"; };
 		C27C3CC7208900C20029FEDF /* LiveCameraViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCameraViewModelTest.swift; sourceTree = "<group>"; };
+		C2C3CAF4208BB68000A61172 /* VisionWrapperMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionWrapperMock.swift; sourceTree = "<group>"; };
 		CE70FB63D509F080B96711AB /* Pods_ComputerVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComputerVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,6 +170,22 @@
 				607BD66861FC6102937C8C5D /* Pods-ComputerVisionUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C20EE6C7208B99270066ED9F /* Preview View */ = {
+			isa = PBXGroup;
+			children = (
+				C20EE6CB208BA2970066ED9F /* PreviewView.swift */,
+			);
+			path = "Preview View";
+			sourceTree = "<group>";
+		};
+		C20EE6C8208B99270066ED9F /* VIsion Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				C20EE6C9208B994E0066ED9F /* VisionWrapper.swift */,
+			);
+			path = "VIsion Wrapper";
 			sourceTree = "<group>";
 		};
 		C26B362520872A5C003269D7 /* Category */ = {
@@ -285,6 +307,8 @@
 			isa = PBXGroup;
 			children = (
 				C27C3CAE2087CCE50029FEDF /* FeatureDetectionProtocol.h */,
+				C20EE6C7208B99270066ED9F /* Preview View */,
+				C20EE6C8208B99270066ED9F /* VIsion Wrapper */,
 				C27C3CA62087CCA70029FEDF /* VideoCamera */,
 				C27C3CA92087CCA70029FEDF /* OpevCV Wrapper */,
 			);
@@ -321,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				C27C3CC52088FFB40029FEDF /* OpenCVWrapperMock.swift */,
+				C2C3CAF4208BB68000A61172 /* VisionWrapperMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -626,7 +651,9 @@
 				C279D6222085000200C0F946 /* AppDelegate.swift in Sources */,
 				C27C3C9C2087C4500029FEDF /* LiveCameraViewController.swift in Sources */,
 				C27C3C9E2087C5910029FEDF /* Constants.swift in Sources */,
+				C20EE6CC208BA2970066ED9F /* PreviewView.swift in Sources */,
 				C27C3C992087BC1E0029FEDF /* LiveCameraViewModel.swift in Sources */,
+				C20EE6CA208B994E0066ED9F /* VisionWrapper.swift in Sources */,
 				C27C3CAC2087CCA70029FEDF /* VideoCamera.mm in Sources */,
 				C279D6262085008900C0F946 /* DashboardViewController.swift in Sources */,
 				C26B362B20872AEA003269D7 /* UIImage+OpenCV.mm in Sources */,
@@ -639,6 +666,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C27C3CC62088FFB40029FEDF /* OpenCVWrapperMock.swift in Sources */,
+				C2C3CAF5208BB68000A61172 /* VisionWrapperMock.swift in Sources */,
 				C27C3CC8208900C20029FEDF /* LiveCameraViewModelTest.swift in Sources */,
 				C279D6022084FE3D00C0F946 /* ComputerVisionTests.swift in Sources */,
 			);
@@ -798,7 +826,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ComputerVision/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = ComputerVision/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.ComputerVision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -822,7 +850,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ComputerVision/PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = ComputerVision/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rastogigaurav.ComputerVision;
 				PRODUCT_NAME = "$(TARGET_NAME)";

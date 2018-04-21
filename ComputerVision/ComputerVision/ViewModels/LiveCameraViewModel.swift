@@ -25,7 +25,9 @@ struct LiveCameraViewModel {
     }
     
     func didTap(tappedPoint:CGPoint){
-        self.wrapper.point!(ofInterest: tappedPoint)
+        if self.wrapper.responds(to: #selector(FeatureDetectionProtocol.point(ofInterest:))) == true {
+            self.wrapper.point!(ofInterest: tappedPoint)
+        }
     }
 }
 
@@ -36,7 +38,8 @@ extension LiveCameraViewModel {
             let wrapper = OpenCVWrapper(cameraView: previewView, scale: 2.0)!
             return LiveCameraViewModel(featureDetectionWrapper: wrapper)
         case .native:
-            let wrapper = OpenCVWrapper(cameraView: previewView, scale: 2.0)!
+            let wrapper = VisionWrapper(with: previewView as! PreviewView)
+            //let wrapper = OpenCVWrapper(cameraView: previewView, scale: 2.0)!
             return LiveCameraViewModel(featureDetectionWrapper: wrapper)
         }
     }
